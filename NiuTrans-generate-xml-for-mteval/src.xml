@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mteval SYSTEM "ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-xml-v1.3.dtd">
+<mteval>
+	<srcset setid="NiuTrans_example_set" srclang="Chinese">
+		<doc docid="doc1" genre="NiuTrans">
+			<p>
+				<seg id="1">ŷ�� ���� ̽�� ͧ С ��Ȯ ���� ��½ �� ��Ѷ ȫ �� </seg>
+			</p>
+		</doc>
+	</srcset>
+</mteval>

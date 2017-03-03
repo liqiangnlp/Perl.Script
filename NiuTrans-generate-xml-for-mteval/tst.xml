@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mteval SYSTEM "ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-xml-v1.3.dtd">
+<mteval>
+	<tstset setid="NiuTrans_example_set" srclang="Chinese" trglang="English" sysid="NiuTrans">
+		<doc docid="doc1" genre="NiuTrans">
+			<p>
+				<seg id="1">europe ��Ȯ two audio signals after landing without a survey of mars , small boat</seg>
+			</p>
+		</doc>
+	</tstset>
+</mteval>
