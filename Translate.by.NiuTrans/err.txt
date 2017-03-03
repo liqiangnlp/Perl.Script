@@ -1,0 +1,212 @@
+########### SCRIPT ########### SCRIPT ############ SCRIPT ##########
+#                                                                  #
+#  Translate by NiuTransServer(version 0.3.0)   -- www.nlplab.com  #
+#                                                                  #
+########### SCRIPT ########### SCRIPT ############ SCRIPT ##########
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>NiuTransServer</title>
+		<style type="text/css">
+		
+		#head{
+			background-image:url("images/head.png");
+			background-repeat:repeat-x;
+			height:120px;
+			margin-top:0px;
+			padding-top:20px;
+			padding-left:20px;
+
+		}
+		#head #head-title{
+			font-family: Arial, Helvetica, sans-serif;
+			color:white;
+			font-weight:bold;
+			font-size:40px;
+			align:left;
+		}
+		#head #images{
+			align:right;
+			padding-right:40px;
+		}
+		#head #logo{
+			height:60px;
+			width:40px;
+		}
+		#head #neunlp{
+			height:60px;
+		}
+		
+		td{
+			font-family:Arial;
+			font-size: 12px;
+		}
+		</style>
+			<script type="text/javascript">
+			function ResizeImages()
+			{
+			   var imgs = document.getElementById("himg");
+				var w = window.screen.width;
+				var wid = w;
+				var type = document.getElementById("type");
+				var countType = type.options.length;
+				imgs.width = wid;
+				for(var k=0;k<countType;k++){
+					if(type.options[k].value==''){
+						type.options[k].selected=true;
+					}
+				}
+			}
+			function ResizeHeader()
+			{
+			   var headtable = document.getElementById("headtable");
+			   var headtr = document.getElementById("headtr");
+				var w = window.screen.width;
+				var wid = w - 20;
+				headtable.width = wid;
+				headtr.width = wid;
+			}
+			function resetJs(){
+				var input = document.getElementById("input");
+				var output = document.getElementById("output");
+				var hidden = document.getElementById("hidden");
+				var appendInfo = document.getElementById("append-info");
+				input.value="";
+				output.value="";
+				hidden.value="reset";
+				appendInfo.value="";
+				
+			}
+			function exp_coll(ind) {
+				  s = document.getElementById(ind);
+
+				  if (s.style.display == 'none') {
+				    s.style.display = 'block';
+				  } else if (s.style.display == 'block') {
+				    s.style.display = 'none';
+				  }
+				}
+			
+			</script>
+		
+	</head>
+	<body onload="ResizeHeader()" leftmargin="0" topmargin="0">
+		<div id="head">
+			<table id="headtable" border="0">
+				<tr id="headtr">
+					<td width="300px"><font id="head-title">NiuTransServer</font></td>
+					<td id="images" align="right"><img id="neunlp" src="images/neunlp.png" alt="NiuTrans"/><img id="logo" src="images/niu.jpg" alt="NiuTrans"/></td>
+					<td width="40px"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="main">
+		<form name="tran" action="translate" method="get">
+				
+				<table width="1200px" align="center" border="0px" rules="none" cellspacing="0px" cellpadding="0px">
+					<tr bgcolor="#C1FFC1" style="height:30px;">
+						<td align="right"><font face="Arial" size="2pt"><b>Source Language</b></font></td>
+						<td align="center" width="200px">
+							
+						</td>
+						<td align="left"><font face="Arial" size="2pt"><b>Target Language</b></font></td>
+					</tr>
+				
+					<tr>
+						<td align="right">
+							
+							<textarea id="input" name="input" rows="13" cols="60" style="background-color:#FFF3E5;">你好！</textarea>
+						</td>
+						
+						<td align="center">
+						<table height="130">
+							<tr style="height:50" valign="top">
+								<td>
+								<!-- 
+								<label for="type"><font face="Arial" size="2pt">Type</font></label>
+										<select id="type" name="type">
+											<option value="news">news</option>
+											<option value="patent">patent</option>
+										</select>
+								 -->	
+								</td>
+							</tr>
+							<tr style="height:80;" valign="top">
+								<td>
+									<input type="submit" name="sub" value="Translate >>" style="background-color:#BEBEBE;"/>
+								</td>
+							</tr>
+						
+						</table>
+						</td>
+						<td align="left">
+							<textarea id="output" name="output" rows="13" cols="60" readonly="readonly" style="background-color:#FFF3E5;">Hello! 
+</textarea>
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="right">
+							<input type="hidden" id="hidden" name="hidden" value="noreset"/>
+							<input type="submit" id="re" value="reset" style="background-color:#BEBEBE;" onclick="resetJs()"/>
+						</td>
+						<td>
+						</td>
+						<td align="left">
+						<!-- 
+							<label for="paras"><font face="Arial" size="2pt">paragraph</font></label>
+							<input type="text" id="paras" name="paras" value="" size="4"/>
+							<input type="submit" value="go"/>
+						 -->	
+						    <input type="hidden" name="paras" value=""/>
+						</td>
+
+					</tr>
+					<tr>
+						<td id="append-info" align="left" valign="top">
+							<font>Segmentation with generalization and translation</font><br/><table border='0' cellspacing='1' cellpadding='3'>
+<tr>
+<td>你好 ! </td></tr>
+</table>
+
+							<br/>
+							<font>Segmentation without generalization and translation</font><br/><table border='0' cellspacing='1' cellpadding='3'>
+<tr>
+<td>你好 !</td></tr>
+</table>
+
+						</td>
+						<td>
+						</td>
+						<td id="append-info" align="left" valign="top">
+							<table style='border:1px #ffffff solid;' border='0' cellspacing='1' cellpadding='3' valign='top' align='left'>
+<tr>
+<td><a onMouseOver="window.status='View abstract'; return true" onMouseOut="window.status=' '; return true" href="javascript:exp_coll('detail_dntrans1');">
+<font style="color:blue;font-size:12pt;font-weight:bold">Sentence 1</font></a><br/><span id=detail_dntrans1 style="display:none; text-align:left;">
+<font size=-1>
+<ul>
+<li>[0, 1]: &lt;s&gt; =&gt; &lt;s&gt;
+<li>[1, 2]: 你好 =&gt; hello
+<li>[2, 3]: ! =&gt; !
+<li>[3, 4]: &lt;/s&gt; =&gt; &lt;/s&gt;
+</ul>
+</font></span></td></tr>
+</table>
+
+						</td>
+					</tr>
+				</table>
+			</form>
+			<center><font size="5" style="color:red"></font></center>
+		</div>
+		<div style="height:20px">
+		</div>
+		<div align="center">
+			
+		</div>
+	</body>
+</html>
+

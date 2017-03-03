@@ -1,0 +1,35 @@
+[SENTENCE1]
+你好 !
+你好 !
+Hello!
+[0, 1]: <s> => <s>
+[1, 2]: 你好 => hello
+[2, 3]: ! => !
+[3, 4]: </s> => </s>
+
+DONE!
+
+[SENTENCE2]
+今天 天气 真 好 !
+今天 天气 真 好 !
+Today the weather is really good!
+[0, 1]: <s> => <s>
+[1, 2]: 今天 => today
+[2, 4]: 天气 真 => the weather is really
+[4, 5]: 好 => good
+[5, 6]: ! => !
+[6, 7]: </s> => </s>
+
+DONE!
+
+[SENTENCE3]
+你 是 谁 ?
+你 是 谁 ?
+Who are you?
+[0, 1]: <s> => <s>
+[1, 4]: 你 是 谁 => who are you
+[4, 5]: ? => ?
+[5, 6]: </s> => </s>
+
+DONE!
+

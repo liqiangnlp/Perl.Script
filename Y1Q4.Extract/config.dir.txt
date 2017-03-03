@@ -1,0 +1,5 @@
+E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\bc	E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\bc.extract
+E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\bn	E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\bn.extract
+E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\ng	E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\ng.extract
+E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\nw	E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\nw.extract
+E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\wl	E:\LDC2006E93-GALE-Y1Q4-20140411\word_alignment\chinese\wl.extract

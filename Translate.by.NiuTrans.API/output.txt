@@ -1,0 +1,16 @@
+[SENTENCE1]
+{"tgt_text":"Hello! \n","to":"english","from":"chinese"}
+[SENTENCE2]
+{"tgt_text":"It's a nice day! \n","to":"english","from":"chinese"}
+[SENTENCE3]
+{"tgt_text":"Who are you? \n","to":"english","from":"chinese"}
+
+
+[SENTENCE6]
+{"tgt_text":"Hello! \n","to":"english","from":"chinese"}
+[SENTENCE7]
+{"tgt_text":"It's a nice day! \n","to":"english","from":"chinese"}
+[SENTENCE8]
+{"tgt_text":"Who are you? \n","to":"english","from":"chinese"}
+
+
